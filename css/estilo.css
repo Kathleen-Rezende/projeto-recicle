@@ -51,10 +51,13 @@ nav a:hover {
 #banner {
     display: flex;
     justify-content: center; 
-    background-image: url(img/recicle_poramor.com.br.png);
+    height: 496px;
+}
+.banner-bg {
+    background-image: url(../img/recicle_poramor.com.br.png);
     background-position: center;
     background-size: cover; 
-    height: 670px;
+    height: 670px !important;
 }
 .column {
     flex-direction: column;
@@ -81,6 +84,18 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.to_horizontal {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.to_horizontal img {
+    width: 350px;
+}
+.to_horizontal img:hover {
+    width: 400px;
 }
 .banner_options {
     display: flex;
@@ -287,6 +302,13 @@ footer .widget_title_text {
     font-size: 12px;
     margin-top: 30px;
 }
+.footer_copy a {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+.footer_copy a:hover {
+    text-decoration: underline;
+}
 h1, h5{
     font-weight: 100;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -325,8 +347,9 @@ link {
 }
 .mm_line {
     height: 3px;
-    background-color: #39aae1;
+    background-color: #dad9f5;
 }
+
 @media (max-width:600px) {
     .banner_headline {
         padding:20px;
@@ -379,4 +402,14 @@ link {
         flex-direction: column;
         justify-content: space-around;
     }
+    .to_horizontal {
+        flex-direction: column;
+    }
+    .to_horizontal img {
+        width: 250px;
+    }
+    .hide {
+        display: none;
+    }
+    
 }
